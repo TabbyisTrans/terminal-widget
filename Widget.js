@@ -13,10 +13,10 @@ async function ErFunction() {
     github: await fetchData("github", "TabbyisTrans"),
     reddit: await fetchData("reddit", "SUS_PinkMercy"),
     // Your SteamID64 from Steam is required for below, find it with "https://steamid.io"
-    steam: await fetchData("steamgames", "NULL"),
+    steam: await fetchData("steamgames", "76561198255940222"),
     // Use Channel or Group ID for steamfriends
-    steamfriends: await fetchData("steamfriends", "NULL"),
-    twitter: await fetchData("twitter", "SUS_PinkMercy")
+    steamfriends: await fetchData("steamfriends", "76561198255940222"),
+    twitter: await fetchData("twitter", "@dexerto")
   }
 }
 // ErFunction is a work of Erfan Khavarian (https://github.com/ErFUN-KH)
@@ -30,7 +30,7 @@ function createWidget(data) {
   console.log(data)
   const w = new ListWidget()
   const bgColor = new LinearGradient()
-  bgColor.colors = [new Color("#29323c"), new Color("#1c1c1c")]
+  bgColor.colors = [new Color("#00000"), new Color("#00000")]
   bgColor.locations = [0.0, 1.0]
   w.backgroundGradient = bgColor
   w.setPadding(12, 15, 15, 12)
@@ -64,15 +64,15 @@ function createWidget(data) {
   githubLine.textColor = new Color("#ff9468")
   githubLine.font = new Font("Menlo", 11)
   // reddit Follower Count
-  const redditLine = w.addText(`[📷] reddit: ${data.reddit}`)
+  const redditLine = w.addText(`[🍊] reddit: ${data.reddit}`)
   redditLine.textColor = new Color("#C13584")
   redditLine.font = new Font("Menlo", 11)
   // steamfriends Member Count
-  const steamfriendsLine = w.addText(`[️️✈️] steamfriends: ${data.steamfriends}`)
+  const steamfriendsLine = w.addText(`[️️🗣️] steamfriends: ${data.steamfriends}`)
   steamfriendsLine.textColor = new Color("#0088cc")
   steamfriendsLine.font = new Font("Menlo", 11)
   // Twitter Follower Count
-  const twitterLine = w.addText(`[🐥] Twitter: ${data.twitter}`)
+  const twitterLine = w.addText(`[🐬] Twitter: 1865`)
   twitterLine.textColor = new Color("#1DA1F2")
   twitterLine.font = new Font("Menlo", 11)
   
