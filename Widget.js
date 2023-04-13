@@ -72,7 +72,7 @@ function createWidget(data) {
   steamfriendsLine.textColor = new Color("#0088cc")
   steamfriendsLine.font = new Font("Menlo", 11)
   // Twitter Follower Count
-  const twitterLine = w.addText(`[🐬] Twitter: 1865`)
+  const twitterLine = w.addText(`[🐬] Twitter: 1861`)
   twitterLine.textColor = new Color("#1DA1F2")
   twitterLine.font = new Font("Menlo", 11)
   
