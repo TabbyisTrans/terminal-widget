@@ -13,10 +13,10 @@ async function ErFunction() {
     github: await fetchData("github", "TabbyisTrans"),
     reddit: await fetchData("reddit", "SUS_PinkMercy"),
     // Your SteamID64 from Steam is required for below, find it with "https://steamid.io"
-    steam: await fetchData("steamgames", "76561198255940222"),
+    steam: await fetchData("steamgames", "yourid"),
     // Use Channel or Group ID for steamfriends
-    steamfriends: await fetchData("steamfriends", "76561198255940222"),
-    twitter: await fetchData("twitter", "@dexerto")
+    steamfriends: await fetchData("steamfriends", "yourid"),
+    twitter: await fetchData("twitter", "@apibroken")
   }
 }
 // ErFunction is a work of Erfan Khavarian (https://github.com/ErFUN-KH)
